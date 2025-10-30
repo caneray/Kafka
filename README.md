@@ -10,4 +10,6 @@
 
 > Bu komutlar, Kafka konteynerinde temel işlemleri (topic oluşturma, mesaj gönderme/alma) hızlıca denemek için kullanılabilir. <br>
 
-> Bu projeyi çalıştırmak ve mesaj sistemini göndermeyi görmemiz için clientte Docker Desktop uygulaması kurulu olması gerekmektedir. Sonrasında projenin dizinine gelip bu dizinde docker compose up -d yaparak kafkayı ayağa kaldırdıktan sonra yukarıda bulunan komutları yazarak mesajların consumer tarafına iletildiği görebilir.
+> Bu projeyi çalıştırmak ve mesaj sistemini göndermeyi görmemiz için clientte Docker Desktop uygulaması kurulu olması gerekmektedir. Sonrasında projenin dizinine gelip bu dizinde docker compose up -d yaparak kafkayı ayağa kaldırdıktan sonra yukarıda bulunan komutları yazarak mesajların consumer tarafına iletildiği görebilir. <br>
+
+> Producer projesini Visual Studio üzerinden kaldırmak istersek Producer altındaki Program.cs e gidip bootstrap olarak tanımlanan bağlanacağı adresi ***const string bootstrap = "localhost:9092";*** bu şekilde değiştirilmesi gerekmektedir.
